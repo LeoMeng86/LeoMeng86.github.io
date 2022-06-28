@@ -268,7 +268,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -402,12 +402,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                                <span class="chip bg-color">编程</span>
-                            </a>
-                        
                             <a href="/tags/C/">
                                 <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                <span class="chip bg-color">编程</span>
                             </a>
                         
                     </div>
@@ -440,7 +440,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    273
+                    283
                 </div>
                 
 
@@ -474,6 +474,7 @@
 <h2 id="程序难点及解决思路"><a href="#程序难点及解决思路" class="headerlink" title="程序难点及解决思路"></a>程序难点及解决思路</h2><p>本次的程序难点在于如何将双向关联改为单向关联，PPT中给出的方案是在Male类中设立一个静态的数组储存每一个新建的Male类，Male类中还储存了Female类，Female类定义一个Male* gethusband()函数通过访问Male的静态数组从而访问Male类，若此Male类中的Female类就是自身，则返回这个Male类。</p>
 <h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>为了显示每一个Male类与Female类的对应关系，我在两类中加入了新的变量string name用于储存每一位的姓名，随后定义Male和Female类静态函数用于输出每一位对应关系，这样可以更直接的看出对应的关系。</p>
 <h2 id="我的收获"><a href="#我的收获" class="headerlink" title="我的收获"></a>我的收获</h2><p>此次收获在于加深了对静态数据已经静态函数的了解。并且对类的相关学习有了更深的理解。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p><a target="_blank" rel="noopener" href="https://github.com/LeoMeng86/Cpp_experiment.git">https://github.com/LeoMeng86/Cpp_experiment.git</a></p>
 
                 
             </div>
@@ -538,12 +539,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                                    <span class="chip bg-color">编程</span>
-                                </a>
-                            
                                 <a href="/tags/C/">
                                     <span class="chip bg-color">C++</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                    <span class="chip bg-color">编程</span>
                                 </a>
                             
                         </div>
@@ -751,12 +752,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                        <span class="chip bg-color">编程</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/c/">
-                        <span class="chip bg-color">c++</span>
+                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">编程</span>
                     </a>
                     
                 </div>
@@ -804,12 +805,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                        <span class="chip bg-color">编程</span>
-                    </a>
-                    
                     <a href="/tags/C/">
                         <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">编程</span>
                     </a>
                     
                 </div>
@@ -1012,7 +1013,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">12.9k</span>&nbsp;字
+                class="white-color">17.7k</span>&nbsp;字
             
             
             

@@ -400,12 +400,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                <span class="chip bg-color">编程</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                编程
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -423,14 +440,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    582
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -453,7 +470,20 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>模拟一个小型数据库系统（DBMS）的实现，最小化的实现数据库和数据表的管理，实现数据库和数据表和数据的增加，查询，修改和删除（可以考虑多态），数据存储使用oi类，储存文件可以用文本格式也可以用XML或者其他专门格式，操作指令发布可以使用界面，可以使用自定义管理器支持的简单字符命令或者类似SQL语言。</p>
+<h2 id="数据库，数据表，数据的概念；SQL语言的概念"><a href="#数据库，数据表，数据的概念；SQL语言的概念" class="headerlink" title="数据库，数据表，数据的概念；SQL语言的概念"></a>数据库，数据表，数据的概念；SQL语言的概念</h2><p>数据库是一个按数据结构来存储和管理数据的计算机软件系统。</p>
+<p>数据表是数据库的重要组成部分，每一个数据库都是由若干个数据表组成的。</p>
+<p>SQL结构化查询语言是<strong>关系数据库</strong>中最普遍使用的语言。主要包括查询、数据操纵、数据定义、数据控制功能，是一种通用的、功能强大的关系数据库的标准语言。</p>
+<h2 id="题目要求"><a href="#题目要求" class="headerlink" title="题目要求"></a>题目要求</h2><p>1）通过文件模拟数据库，实现增删改查</p>
+<p>2）支持简单的字符命令或SQL语言</p>
+<h2 id="实现难点"><a href="#实现难点" class="headerlink" title="实现难点"></a>实现难点</h2><p>1）需要使用文件夹来模拟数据库，使用文件来模拟数据表，将每条数据放在一行显示，每次操作都需要整行进行。</p>
+<p>2）文件的IO类的定位有难度，几乎每次都需要重新定位到文件头或者文件尾。</p>
+<h2 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h2><p>1）将数据按行存储，在查询等过程中以整行的形式展示，分级别打开，打开数据表之前要先判断是否已经打开数据库，每次打开数据表，只需要单独输出数据表名称即可。</p>
+<p>2）每次选取数据表后，使用vector将整个文件，按行读入，方便删除等操作。</p>
+<h2 id="数据库在软件中的地位"><a href="#数据库在软件中的地位" class="headerlink" title="数据库在软件中的地位"></a>数据库在软件中的地位</h2><p>数据库把软件运行所需要的数据，存在数据库中，方便软件运行过程中的读取以及使用。</p>
+<h2 id="我的收获"><a href="#我的收获" class="headerlink" title="我的收获"></a>我的收获</h2><p>进一步了解了数据库的相关概念，对CPP的IO类有了进一步的理解和使用，提高了编程能力。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p><a target="_blank" rel="noopener" href="https://github.com/LeoMeng86/Cpp_experiment.git">https://github.com/LeoMeng86/Cpp_experiment.git</a></p>
+
                 
             </div>
             <hr/>
@@ -516,7 +546,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                    <span class="chip bg-color">编程</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -684,18 +722,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/06/07/CPP%E7%AC%AC%E5%85%AD%E6%AC%A1%E4%B8%8A%E6%9C%BA%E5%AE%9E%E9%AA%8C/">
+                <a href="/2022/06/11/%E7%BB%A7%E6%89%BF/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="CPP第六次上机实验">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="继承">
                         
-                        <span class="card-title">CPP第六次上机实验</span>
+                        <span class="card-title">继承</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -705,18 +742,33 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-07
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-11
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Leo Meng
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                    编程
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">编程</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -761,12 +813,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                        <span class="chip bg-color">编程</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
-                    <a href="/tags/c/">
-                        <span class="chip bg-color">c++</span>
+                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">编程</span>
                     </a>
                     
                 </div>
@@ -969,7 +1021,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">12.9k</span>&nbsp;字
+                class="white-color">17.7k</span>&nbsp;字
             
             
             
